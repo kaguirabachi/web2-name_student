@@ -81,8 +81,8 @@ describe('StudentsService', () => {
   it('creates a student with the default group', async () => {
     const student = await service.create({
       firstName: 'Ilia',
-      lastName: 'Shushvaliuk',
-      email: 'ilia.shushvaliuk@usarb.md',
+      lastName: 'Shushvaliuc',
+      email: 'ilia.shushvaliuc@usarb.md',
     });
 
     expect(student).toMatchObject({ id: 1, groupName: 'IS41R', firstName: 'Ilia' });
@@ -92,8 +92,8 @@ describe('StudentsService', () => {
   it('rejects a duplicate email with 409', async () => {
     const payload = {
       firstName: 'Ilia',
-      lastName: 'Shushvaliuk',
-      email: 'ilia.shushvaliuk@usarb.md',
+      lastName: 'Shushvaliuc',
+      email: 'ilia.shushvaliuc@usarb.md',
     };
 
     await service.create(payload);

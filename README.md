@@ -18,7 +18,7 @@ The seed migration inserts the five students of the group:
 
 | Name | Email |
 | --- | --- |
-| Ilia Shushvaliuk | ilia.shushvaliuk@usarb.md |
+| Ilia Shushvaliuc | ilia.shushvaliuc@usarb.md |
 | Dmitrii Moscalciuc | dmitrii.moscalciuc@usarb.md |
 | Nikita Basiuc | nikita.basiuc@usarb.md |
 | Egor Dmitriev | egor.dmitriev@usarb.md |
@@ -44,7 +44,7 @@ A student is `{ id, firstName, lastName, email, groupName, createdAt, updatedAt 
 ```bash
 curl -X POST http://localhost:3000/students \
   -H 'Content-Type: application/json' \
-  -d '{"firstName":"Ilia","lastName":"Shushvaliuk","email":"ilia.shushvaliuk@usarb.md"}'
+  -d '{"firstName":"Ilia","lastName":"Shushvaliuc","email":"ilia.shushvaliuc@usarb.md"}'
 ```
 
 ## Running with Docker
