@@ -88,7 +88,7 @@ describe('Students API (e2e)', () => {
   it('POST /students validates the payload', async () => {
     await request(app.getHttpServer())
       .post('/students')
-      .send({ firstName: 'Ilia', lastName: 'Sushvaliuk', email: 'not-an-email' })
+      .send({ firstName: 'Ilia', lastName: 'Shushvaliuk', email: 'not-an-email' })
       .expect(400);
   });
 
@@ -97,12 +97,12 @@ describe('Students API (e2e)', () => {
       .post('/students')
       .send({
         firstName: 'Ilia',
-        lastName: 'Sushvaliuk',
-        email: 'ilia.sushvaliuk@usarb.md',
+        lastName: 'Shushvaliuk',
+        email: 'ilia.shushvaliuk@usarb.md',
       })
       .expect(201);
 
-    expect(created.body).toMatchObject({ groupName: 'IS41R', lastName: 'Sushvaliuk' });
+    expect(created.body).toMatchObject({ groupName: 'IS41R', lastName: 'Shushvaliuk' });
 
     const list = await request(app.getHttpServer()).get('/students').expect(200);
     expect(list.body).toHaveLength(1);
@@ -110,7 +110,7 @@ describe('Students API (e2e)', () => {
     const one = await request(app.getHttpServer())
       .get(`/students/${created.body.id}`)
       .expect(200);
-    expect(one.body.email).toBe('ilia.sushvaliuk@usarb.md');
+    expect(one.body.email).toBe('ilia.shushvaliuk@usarb.md');
 
     const updated = await request(app.getHttpServer())
       .patch(`/students/${created.body.id}`)

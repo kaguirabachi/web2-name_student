@@ -12,12 +12,12 @@ const lastName = z
   .trim()
   .min(1, 'Last name is required')
   .max(100)
-  .meta({ description: 'Student last name', example: 'Sushvaliuk' });
+  .meta({ description: 'Student last name', example: 'Shushvaliuk' });
 
 const email = z
   .email('A valid email is required')
   .max(255)
-  .meta({ description: 'University email address', example: 'ilia.sushvaliuk@usarb.md' });
+  .meta({ description: 'University email address', example: 'ilia.shushvaliuk@usarb.md' });
 
 const groupName = z
   .string()
@@ -30,8 +30,8 @@ export const studentSchema = z
   .object({
     id: z.number().int().meta({ example: 1 }),
     firstName: z.string().meta({ example: 'Ilia' }),
-    lastName: z.string().meta({ example: 'Sushvaliuk' }),
-    email: z.string().meta({ example: 'ilia.sushvaliuk@usarb.md' }),
+    lastName: z.string().meta({ example: 'Shushvaliuk' }),
+    email: z.string().meta({ example: 'ilia.shushvaliuk@usarb.md' }),
     groupName: z.string().meta({ example: 'IS41R' }),
     createdAt: z.date().meta({ example: '2026-02-01T10:00:00.000Z' }),
     updatedAt: z.date().meta({ example: '2026-02-01T10:00:00.000Z' }),

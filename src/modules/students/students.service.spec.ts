@@ -81,8 +81,8 @@ describe('StudentsService', () => {
   it('creates a student with the default group', async () => {
     const student = await service.create({
       firstName: 'Ilia',
-      lastName: 'Sushvaliuk',
-      email: 'ilia.sushvaliuk@usarb.md',
+      lastName: 'Shushvaliuk',
+      email: 'ilia.shushvaliuk@usarb.md',
     });
 
     expect(student).toMatchObject({ id: 1, groupName: 'IS41R', firstName: 'Ilia' });
@@ -92,8 +92,8 @@ describe('StudentsService', () => {
   it('rejects a duplicate email with 409', async () => {
     const payload = {
       firstName: 'Ilia',
-      lastName: 'Sushvaliuk',
-      email: 'ilia.sushvaliuk@usarb.md',
+      lastName: 'Shushvaliuk',
+      email: 'ilia.shushvaliuk@usarb.md',
     };
 
     await service.create(payload);
@@ -119,8 +119,8 @@ describe('StudentsService', () => {
   it('updates an existing student', async () => {
     const created = await service.create({
       firstName: 'Nikita',
-      lastName: 'Basiuk',
-      email: 'nikita.basiuk@usarb.md',
+      lastName: 'Basiuc',
+      email: 'nikita.basiuc@usarb.md',
     });
 
     const updated = await service.update(created.id, { groupName: 'IS42R' });
@@ -130,8 +130,8 @@ describe('StudentsService', () => {
   it('removes a student', async () => {
     const created = await service.create({
       firstName: 'Dmitrii',
-      lastName: 'Moskalchuk',
-      email: 'dmitrii.moskalchuk@usarb.md',
+      lastName: 'Moscalciuc',
+      email: 'dmitrii.moscalciuc@usarb.md',
     });
 
     await service.remove(created.id);
