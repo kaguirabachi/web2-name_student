@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.npm-cache/
+
+# build output
+dist/
+coverage/
+
+# generated Prisma client
+src/generated/
+
+# environment
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# editor
+.idea/
+.vscode/
+*.tsbuildinfo
