@@ -20,7 +20,7 @@ The seed migration inserts the five students of the group:
 | --- | --- |
 | Ilia Shushvaliuc | ilia.shushvaliuc@usarb.md |
 | Dmitrii Moscalciuc | dmitrii.moscalciuc@usarb.md |
-| Nikita Basiuc | nikita.basiuc@usarb.md |
+| Nichita Basiuc | nichita.basiuc@usarb.md |
 | Egor Dmitriev | egor.dmitriev@usarb.md |
 | Denis Floresco | denis.floresco@usarb.md |
 

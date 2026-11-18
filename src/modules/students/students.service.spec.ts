@@ -118,9 +118,9 @@ describe('StudentsService', () => {
 
   it('updates an existing student', async () => {
     const created = await service.create({
-      firstName: 'Nikita',
+      firstName: 'Nichita',
       lastName: 'Basiuc',
-      email: 'nikita.basiuc@usarb.md',
+      email: 'nichita.basiuc@usarb.md',
     });
 
     const updated = await service.update(created.id, { groupName: 'IS42R' });
